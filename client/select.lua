@@ -10,6 +10,7 @@ function WeaponStyle()
 			if WarMenu.Button(v[1]) then
 				DecorSetInt(PlayerPedId(), "gunstyle", k)
 				SetWeaponAnimationOverride(PlayerPedId(), GetHashKey(v[2]))
+				ClearPedTasks(PlayerPedId())
 			end
 		end
 
